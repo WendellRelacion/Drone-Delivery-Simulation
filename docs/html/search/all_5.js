@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getbattery_19',['getBattery',['../classBattery.html#a01979e3818ba1c83ac483670197dba72',1,'Battery']]],
+  ['getcolor_20',['getColor',['../classIEntity.html#add6261e3de39eb47bdc3cf54e2ef8ffa',1,'IEntity']]],
+  ['getcontroller_21',['getController',['../classSimulationModel.html#aa55940d3d08d26f33e3b22e72b8945b1',1,'SimulationModel']]],
+  ['getdestination_22',['getDestination',['../classPackage.html#aba4a0525a47ac6c98c4e5766d1ae8d82',1,'Package']]],
+  ['getdetails_23',['getDetails',['../classIEntity.html#abe31143a1388f598c92d3726cc8df89a',1,'IEntity']]],
+  ['getdirection_24',['getDirection',['../classIEntity.html#a31ad8d77c483fdd6d98c809c82d88f00',1,'IEntity']]],
+  ['getdistancetraveled_25',['getDistanceTraveled',['../classIEntity.html#abe15dce1de357d358a00942afa2d78af',1,'IEntity']]],
+  ['getentities_26',['getEntities',['../classSimulationModel.html#ae584ca03f3282f15b5ed0e544a939adf',1,'SimulationModel']]],
+  ['getentity_27',['getEntity',['../classBatteryDecorator.html#af6c2e9fb020acd65a777b98dbd954dce',1,'BatteryDecorator::getEntity()'],['../classIEntityDecorator.html#a1ac15bf72a16b7b9b2a1e00fa5565da4',1,'IEntityDecorator::getEntity()']]],
+  ['getgraph_28',['getGraph',['../classSimulationModel.html#ae76b175fbdc73677afe4fa8369879a69',1,'SimulationModel']]],
+  ['getid_29',['getId',['../classIEntity.html#a75eda16c01eb71e84ef6040e7e362fc2',1,'IEntity']]],
+  ['getinstance_30',['getInstance',['../classDataCollectorSingleton.html#a4171f937a43f51681fabf0de74c03a0f',1,'DataCollectorSingleton']]],
+  ['getischarging_31',['getIsCharging',['../classBattery.html#a153c61dbefdbd7009609c3d4f9d69e2c',1,'Battery']]],
+  ['getname_32',['getName',['../classIEntity.html#a04f1636be1094c41b1371e28f269cf2f',1,'IEntity']]],
+  ['getnextdelivery_33',['getNextDelivery',['../classDrone.html#a53c9573a8f3354d9d632be3a04441b38',1,'Drone']]],
+  ['getposition_34',['getPosition',['../classIEntity.html#ab4c7851be78673f6a430a8d89252ead6',1,'IEntity']]],
+  ['getrechargeroute_35',['getRechargeRoute',['../classBatteryDecorator.html#ad732a67837d5c6dd21c4c9c20d4e6175',1,'BatteryDecorator']]],
+  ['getspeed_36',['getSpeed',['../classIEntity.html#a1e2bed1c4d5d8219a4c0d307473c672a',1,'IEntity']]],
+  ['getstrategyname_37',['getStrategyName',['../classPackage.html#ac6dac9638597e53dee1a5d208edc2643',1,'Package']]]
+];

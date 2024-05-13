@@ -1,0 +1,161 @@
+\hypertarget{classBattery}{}\doxysection{Battery Class Reference}
+\label{classBattery}\index{Battery@{Battery}}
+
+
+Represents a battery entity. Extends \mbox{\hyperlink{classIEntity}{IEntity}}.  
+
+
+
+
+{\ttfamily \#include $<$Battery.\+h$>$}
+
+
+
+Inheritance diagram for Battery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classBattery__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classBattery__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBattery_ae105d2774b00e79449e894bcbfdf8aa6}{Battery}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em A new battery is created. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}\label{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}} 
+\mbox{\hyperlink{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}{$\sim$\+Battery}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBattery}{Battery}} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattery_ab29cb4ba4e5f35e54ff4decfe3e7e6ae}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Update the battery in the model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classBattery_a01979e3818ba1c83ac483670197dba72}{get\+Battery}} ()
+\begin{DoxyCompactList}\small\item\em Get the battery level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattery_ac92a6bc1e6cd7b12a2423661ff54d914}{set\+Battery}} (double new\+Battery)
+\begin{DoxyCompactList}\small\item\em Set the battery level. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBattery_a153c61dbefdbd7009609c3d4f9d69e2c}{get\+Is\+Charging}} ()
+\begin{DoxyCompactList}\small\item\em Get the is\+Charging boolean. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattery_ab25ae6ec4fea4472ec5ad4efb221fe3e}{set\+Is\+Charging}} (bool new\+Is\+Charging)
+\begin{DoxyCompactList}\small\item\em Set the is\+Charging boolean. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBattery_adff9bdfd08f09a9c94bb29f6c7ac2532}\label{classBattery_adff9bdfd08f09a9c94bb29f6c7ac2532}} 
+double {\bfseries battery\+Level} = 100
+\item 
+\mbox{\Hypertarget{classBattery_a39db9be41cbb328bfcc079dce9254568}\label{classBattery_a39db9be41cbb328bfcc079dce9254568}} 
+bool {\bfseries is\+Charging} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a battery entity. Extends \mbox{\hyperlink{classIEntity}{IEntity}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBattery_ae105d2774b00e79449e894bcbfdf8aa6}\label{classBattery_ae105d2774b00e79449e894bcbfdf8aa6}} 
+\index{Battery@{Battery}!Battery@{Battery}}
+\index{Battery@{Battery}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{Battery()}{Battery()}}
+{\footnotesize\ttfamily Battery\+::\+Battery (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+A new battery is created. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & JSON object containing the drone\textquotesingle{}s information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBattery_a01979e3818ba1c83ac483670197dba72}\label{classBattery_a01979e3818ba1c83ac483670197dba72}} 
+\index{Battery@{Battery}!getBattery@{getBattery}}
+\index{getBattery@{getBattery}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{getBattery()}{getBattery()}}
+{\footnotesize\ttfamily double Battery\+::get\+Battery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the battery level. 
+
+\begin{DoxyReturn}{Returns}
+The battery level 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_a153c61dbefdbd7009609c3d4f9d69e2c}\label{classBattery_a153c61dbefdbd7009609c3d4f9d69e2c}} 
+\index{Battery@{Battery}!getIsCharging@{getIsCharging}}
+\index{getIsCharging@{getIsCharging}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{getIsCharging()}{getIsCharging()}}
+{\footnotesize\ttfamily bool Battery\+::get\+Is\+Charging (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the is\+Charging boolean. 
+
+\begin{DoxyReturn}{Returns}
+The is\+Charging boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_ac92a6bc1e6cd7b12a2423661ff54d914}\label{classBattery_ac92a6bc1e6cd7b12a2423661ff54d914}} 
+\index{Battery@{Battery}!setBattery@{setBattery}}
+\index{setBattery@{setBattery}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{setBattery()}{setBattery()}}
+{\footnotesize\ttfamily void Battery\+::set\+Battery (\begin{DoxyParamCaption}\item[{double}]{new\+Battery }\end{DoxyParamCaption})}
+
+
+
+Set the battery level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Battery} & The new battery level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattery_ab25ae6ec4fea4472ec5ad4efb221fe3e}\label{classBattery_ab25ae6ec4fea4472ec5ad4efb221fe3e}} 
+\index{Battery@{Battery}!setIsCharging@{setIsCharging}}
+\index{setIsCharging@{setIsCharging}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{setIsCharging()}{setIsCharging()}}
+{\footnotesize\ttfamily void Battery\+::set\+Is\+Charging (\begin{DoxyParamCaption}\item[{bool}]{new\+Is\+Charging }\end{DoxyParamCaption})}
+
+
+
+Set the is\+Charging boolean. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Is\+Charging} & The new is\+Charging boolean \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattery_ab29cb4ba4e5f35e54ff4decfe3e7e6ae}\label{classBattery_ab29cb4ba4e5f35e54ff4decfe3e7e6ae}} 
+\index{Battery@{Battery}!update@{update}}
+\index{update@{update}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Battery\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the battery in the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time step \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9aac6c7fa7d3d721f2ea69b116d39d5b}{IEntity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Battery.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Battery.\+cc\end{DoxyCompactItemize}

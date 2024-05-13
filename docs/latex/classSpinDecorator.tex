@@ -1,0 +1,92 @@
+\hypertarget{classSpinDecorator}{}\doxysection{Spin\+Decorator Class Reference}
+\label{classSpinDecorator}\index{SpinDecorator@{SpinDecorator}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it.  
+
+
+
+
+{\ttfamily \#include $<$Spin\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Spin\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classSpinDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spin\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classSpinDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpinDecorator_a9cac67aeadec2351d737c783a2bd2fa9}{Spin\+Decorator}} (\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$strategy, double time=4, double spin\+Speed=1)
+\begin{DoxyCompactList}\small\item\em Construct a new Spin Decorator object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpinDecorator_a24e8cc12dd6578b1ad30f4b92b3e045b}{celebrate}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Move the entity with the spin behavior for 4 seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpinDecorator_a9cac67aeadec2351d737c783a2bd2fa9}\label{classSpinDecorator_a9cac67aeadec2351d737c783a2bd2fa9}} 
+\index{SpinDecorator@{SpinDecorator}!SpinDecorator@{SpinDecorator}}
+\index{SpinDecorator@{SpinDecorator}!SpinDecorator@{SpinDecorator}}
+\doxysubsubsection{\texorpdfstring{SpinDecorator()}{SpinDecorator()}}
+{\footnotesize\ttfamily Spin\+Decorator\+::\+Spin\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$}]{strategy,  }\item[{double}]{time = {\ttfamily 4},  }\item[{double}]{spin\+Speed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Spin Decorator object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em strategy} & the strategy to decorate onto \\
+\hline
+\mbox{\texttt{ in}}  & {\em time} & how long to celebrate \\
+\hline
+\mbox{\texttt{ in}}  & {\em spin\+Speed} & multiplier for how fast to spin \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpinDecorator_a24e8cc12dd6578b1ad30f4b92b3e045b}\label{classSpinDecorator_a24e8cc12dd6578b1ad30f4b92b3e045b}} 
+\index{SpinDecorator@{SpinDecorator}!celebrate@{celebrate}}
+\index{celebrate@{celebrate}!SpinDecorator@{SpinDecorator}}
+\doxysubsubsection{\texorpdfstring{celebrate()}{celebrate()}}
+{\footnotesize\ttfamily void Spin\+Decorator\+::celebrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Move the entity with the spin behavior for 4 seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to move \\
+\hline
+{\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classICelebrationDecorator}{ICelebration\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Spin\+Decorator.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Spin\+Decorator.\+cc\end{DoxyCompactItemize}

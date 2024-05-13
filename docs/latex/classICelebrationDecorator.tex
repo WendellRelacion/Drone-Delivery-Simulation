@@ -1,0 +1,123 @@
+\hypertarget{classICelebrationDecorator}{}\doxysection{ICelebration\+Decorator Class Reference}
+\label{classICelebrationDecorator}\index{ICelebrationDecorator@{ICelebrationDecorator}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it.  
+
+
+
+
+{\ttfamily \#include $<$ICelebration\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for ICelebration\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classICelebrationDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ICelebration\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classICelebrationDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classICelebrationDecorator_a6d8f0b41a0026d167ec829e9235ff3a7}{ICelebration\+Decorator}} (\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$strategy, double time=4)
+\begin{DoxyCompactList}\small\item\em Construct a new Celebration Decorator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classICelebrationDecorator_a296a4b086b1f6e9dfaf9880d292f8493}\label{classICelebrationDecorator_a296a4b086b1f6e9dfaf9880d292f8493}} 
+virtual \mbox{\hyperlink{classICelebrationDecorator_a296a4b086b1f6e9dfaf9880d292f8493}{$\sim$\+ICelebration\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em Celebration Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classICelebrationDecorator_a73eeb892a13f08e20c86dd4c03be4b6e}{move}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Move the entity with the behavior as described for 4 seconds. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classICelebrationDecorator_ab345ff40591898571d21ceb9c02c4741}{is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Check if the movement is completed by checking the time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classICelebrationDecorator_a160dd00198bc7553705411ba9ba06a5f}\label{classICelebrationDecorator_a160dd00198bc7553705411ba9ba06a5f}} 
+virtual void {\bfseries celebrate} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classICelebrationDecorator_a68378b339cf8c8af9813e133db355177}\label{classICelebrationDecorator_a68378b339cf8c8af9813e133db355177}} 
+\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$ {\bfseries strategy} = nullptr
+\item 
+\mbox{\Hypertarget{classICelebrationDecorator_a45bf2dfb62401487dfa1fec17e566ce9}\label{classICelebrationDecorator_a45bf2dfb62401487dfa1fec17e566ce9}} 
+float {\bfseries time} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classICelebrationDecorator_a6d8f0b41a0026d167ec829e9235ff3a7}\label{classICelebrationDecorator_a6d8f0b41a0026d167ec829e9235ff3a7}} 
+\index{ICelebrationDecorator@{ICelebrationDecorator}!ICelebrationDecorator@{ICelebrationDecorator}}
+\index{ICelebrationDecorator@{ICelebrationDecorator}!ICelebrationDecorator@{ICelebrationDecorator}}
+\doxysubsubsection{\texorpdfstring{ICelebrationDecorator()}{ICelebrationDecorator()}}
+{\footnotesize\ttfamily ICelebration\+Decorator\+::\+ICelebration\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$}]{strategy,  }\item[{double}]{time = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Celebration Decorator object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em strategy} & the strategy to decorate onto \\
+\hline
+\mbox{\texttt{ in}}  & {\em time} & how long to celebrate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classICelebrationDecorator_ab345ff40591898571d21ceb9c02c4741}\label{classICelebrationDecorator_ab345ff40591898571d21ceb9c02c4741}} 
+\index{ICelebrationDecorator@{ICelebrationDecorator}!isCompleted@{isCompleted}}
+\index{isCompleted@{isCompleted}!ICelebrationDecorator@{ICelebrationDecorator}}
+\doxysubsubsection{\texorpdfstring{isCompleted()}{isCompleted()}}
+{\footnotesize\ttfamily bool ICelebration\+Decorator\+::is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the movement is completed by checking the time. 
+
+\begin{DoxyReturn}{Returns}
+True if complete, false if not complete 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIStrategy_ae4b73edc7ce1e0d8108905eeda10ee8c}{IStrategy}}.
+
+\mbox{\Hypertarget{classICelebrationDecorator_a73eeb892a13f08e20c86dd4c03be4b6e}\label{classICelebrationDecorator_a73eeb892a13f08e20c86dd4c03be4b6e}} 
+\index{ICelebrationDecorator@{ICelebrationDecorator}!move@{move}}
+\index{move@{move}!ICelebrationDecorator@{ICelebrationDecorator}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void ICelebration\+Decorator\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Move the entity with the behavior as described for 4 seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to move \\
+\hline
+{\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIStrategy_a45ec6db0aceabc2e3712d0639978a8d0}{IStrategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/ICelebration\+Decorator.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/ICelebration\+Decorator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classDrone}{}\doxysection{Drone Class Reference}
+\label{classDrone}\index{Drone@{Drone}}
+
+
+Represents a drone in a physical system. Drones move using euler integration based on a specified velocity and direction.  
+
+
+
+
+{\ttfamily \#include $<$Drone.\+h$>$}
+
+
+
+Inheritance diagram for Drone\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classDrone__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drone\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classDrone__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrone_ae182c9500fdd3c896ed460004b1b42ad}{Drone}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Drones are created with a name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a667075abb1eb5c54be6418884a387d14}\label{classDrone_a667075abb1eb5c54be6418884a387d14}} 
+\mbox{\hyperlink{classDrone_a667075abb1eb5c54be6418884a387d14}{$\sim$\+Drone}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a53c9573a8f3354d9d632be3a04441b38}\label{classDrone_a53c9573a8f3354d9d632be3a04441b38}} 
+void \mbox{\hyperlink{classDrone_a53c9573a8f3354d9d632be3a04441b38}{get\+Next\+Delivery}} ()
+\begin{DoxyCompactList}\small\item\em Gets the next delivery in the scheduler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_aa151b14b7b3660c8e7e910b74c8d4f08}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Updates the drone\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_af60150a86c9fbe79ef1995e9b401b46b}\label{classDrone_af60150a86c9fbe79ef1995e9b401b46b}} 
+\mbox{\hyperlink{classDrone_af60150a86c9fbe79ef1995e9b401b46b}{Drone}} (const \mbox{\hyperlink{classDrone}{Drone}} \&drone)=delete
+\begin{DoxyCompactList}\small\item\em Removing the copy constructor operator so that drones cannot be copied. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDrone_a2226fed35df96c5a802a0c4f44cc2354}\label{classDrone_a2226fed35df96c5a802a0c4f44cc2354}} 
+\mbox{\hyperlink{classDrone}{Drone}} \& \mbox{\hyperlink{classDrone_a2226fed35df96c5a802a0c4f44cc2354}{operator=}} (const \mbox{\hyperlink{classDrone}{Drone}} \&drone)=delete
+\begin{DoxyCompactList}\small\item\em Removing the assignment operator so that drones cannot be copied. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a drone in a physical system. Drones move using euler integration based on a specified velocity and direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDrone_ae182c9500fdd3c896ed460004b1b42ad}\label{classDrone_ae182c9500fdd3c896ed460004b1b42ad}} 
+\index{Drone@{Drone}!Drone@{Drone}}
+\index{Drone@{Drone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{Drone()}{Drone()}}
+{\footnotesize\ttfamily Drone\+::\+Drone (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Drones are created with a name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & JSON object containing the drone\textquotesingle{}s information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDrone_aa151b14b7b3660c8e7e910b74c8d4f08}\label{classDrone_aa151b14b7b3660c8e7e910b74c8d4f08}} 
+\index{Drone@{Drone}!update@{update}}
+\index{update@{update}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Drone\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the drone\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Delta time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9aac6c7fa7d3d721f2ea69b116d39d5b}{IEntity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Drone.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Drone.\+cc\end{DoxyCompactItemize}

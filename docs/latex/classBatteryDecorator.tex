@@ -1,0 +1,140 @@
+\hypertarget{classBatteryDecorator}{}\doxysection{Battery\+Decorator Class Reference}
+\label{classBatteryDecorator}\index{BatteryDecorator@{BatteryDecorator}}
+
+
+Represents a battery entity decorator. Extends battery functionality to an entity.  
+
+
+
+
+{\ttfamily \#include $<$Battery\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classBatteryDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classBatteryDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBatteryDecorator_a413f097a59e280c888fdc2d053c09a4a}{Battery\+Decorator}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}\label{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}} 
+\mbox{\hyperlink{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}{$\sim$\+Battery\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBatteryDecorator_ac2a808adcd426d1c375b81c7b0dcd735}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Update the battery wrapped entity in the model. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ \mbox{\hyperlink{classBatteryDecorator_af6c2e9fb020acd65a777b98dbd954dce}{get\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Get the battery wrapped entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$ \mbox{\hyperlink{classBatteryDecorator_ad732a67837d5c6dd21c4c9c20d4e6175}{get\+Recharge\+Route}} ()
+\begin{DoxyCompactList}\small\item\em Get the recharge route strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryDecorator_a0b0a148c8f84082c5e326603c74cb65f}{set\+Recharge\+Route}} (\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$new\+Recharge\+Route)
+\begin{DoxyCompactList}\small\item\em Set the recharge route strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a battery entity decorator. Extends battery functionality to an entity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_a413f097a59e280c888fdc2d053c09a4a}\label{classBatteryDecorator_a413f097a59e280c888fdc2d053c09a4a}} 
+\index{BatteryDecorator@{BatteryDecorator}!BatteryDecorator@{BatteryDecorator}}
+\index{BatteryDecorator@{BatteryDecorator}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{BatteryDecorator()}{BatteryDecorator()}}
+{\footnotesize\ttfamily Battery\+Decorator\+::\+Battery\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBatteryDecorator}{Battery\+Decorator}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to decorate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_af6c2e9fb020acd65a777b98dbd954dce}\label{classBatteryDecorator_af6c2e9fb020acd65a777b98dbd954dce}} 
+\index{BatteryDecorator@{BatteryDecorator}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ Battery\+Decorator\+::get\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the battery wrapped entity. 
+
+\begin{DoxyReturn}{Returns}
+The battery wrapped entity 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntityDecorator_a1ac15bf72a16b7b9b2a1e00fa5565da4}{IEntity\+Decorator}}.
+
+\mbox{\Hypertarget{classBatteryDecorator_ad732a67837d5c6dd21c4c9c20d4e6175}\label{classBatteryDecorator_ad732a67837d5c6dd21c4c9c20d4e6175}} 
+\index{BatteryDecorator@{BatteryDecorator}!getRechargeRoute@{getRechargeRoute}}
+\index{getRechargeRoute@{getRechargeRoute}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{getRechargeRoute()}{getRechargeRoute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$ Battery\+Decorator\+::get\+Recharge\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the recharge route strategy. 
+
+\begin{DoxyReturn}{Returns}
+The recharge route strategy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBatteryDecorator_a0b0a148c8f84082c5e326603c74cb65f}\label{classBatteryDecorator_a0b0a148c8f84082c5e326603c74cb65f}} 
+\index{BatteryDecorator@{BatteryDecorator}!setRechargeRoute@{setRechargeRoute}}
+\index{setRechargeRoute@{setRechargeRoute}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{setRechargeRoute()}{setRechargeRoute()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::set\+Recharge\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$}]{new\+Recharge\+Route }\end{DoxyParamCaption})}
+
+
+
+Set the recharge route strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Recharge\+Route} & The new recharge route strategy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryDecorator_ac2a808adcd426d1c375b81c7b0dcd735}\label{classBatteryDecorator_ac2a808adcd426d1c375b81c7b0dcd735}} 
+\index{BatteryDecorator@{BatteryDecorator}!update@{update}}
+\index{update@{update}!BatteryDecorator@{BatteryDecorator}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the battery wrapped entity in the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time step \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntityDecorator_a9333e8c51240099df07751d6e8e92252}{IEntity\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Battery\+Decorator.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Battery\+Decorator.\+cc\end{DoxyCompactItemize}

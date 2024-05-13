@@ -1,0 +1,92 @@
+\hypertarget{classJumpDecorator}{}\doxysection{Jump\+Decorator Class Reference}
+\label{classJumpDecorator}\index{JumpDecorator@{JumpDecorator}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it.  
+
+
+
+
+{\ttfamily \#include $<$Jump\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Jump\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classJumpDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Jump\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classJumpDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJumpDecorator_a0c832652d8cb4ccfd117761dc4db4875}{Jump\+Decorator}} (\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$strategy, double time=4, double jump\+Height=10)
+\begin{DoxyCompactList}\small\item\em Construct a new Jump Decorator object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJumpDecorator_a4050b12c675c7b1e78488af08687157c}{celebrate}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Make the entity celebrate with the jump behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a celebration decorator where the entity will celebrate according to it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJumpDecorator_a0c832652d8cb4ccfd117761dc4db4875}\label{classJumpDecorator_a0c832652d8cb4ccfd117761dc4db4875}} 
+\index{JumpDecorator@{JumpDecorator}!JumpDecorator@{JumpDecorator}}
+\index{JumpDecorator@{JumpDecorator}!JumpDecorator@{JumpDecorator}}
+\doxysubsubsection{\texorpdfstring{JumpDecorator()}{JumpDecorator()}}
+{\footnotesize\ttfamily Jump\+Decorator\+::\+Jump\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIStrategy}{IStrategy}} $\ast$}]{strategy,  }\item[{double}]{time = {\ttfamily 4},  }\item[{double}]{jump\+Height = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Jump Decorator object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em strategy} & the strategy to decorate onto \\
+\hline
+\mbox{\texttt{ in}}  & {\em time} & how long to celebrate \\
+\hline
+\mbox{\texttt{ in}}  & {\em jump\+Height} & how far up to jump \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJumpDecorator_a4050b12c675c7b1e78488af08687157c}\label{classJumpDecorator_a4050b12c675c7b1e78488af08687157c}} 
+\index{JumpDecorator@{JumpDecorator}!celebrate@{celebrate}}
+\index{celebrate@{celebrate}!JumpDecorator@{JumpDecorator}}
+\doxysubsubsection{\texorpdfstring{celebrate()}{celebrate()}}
+{\footnotesize\ttfamily void Jump\+Decorator\+::celebrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Make the entity celebrate with the jump behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to celebrate \\
+\hline
+{\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classICelebrationDecorator}{ICelebration\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Jump\+Decorator.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Jump\+Decorator.\+cc\end{DoxyCompactItemize}

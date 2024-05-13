@@ -1,0 +1,9 @@
+<map id="PathStrategy" name="PathStrategy">
+<area shape="rect" id="node1" title="this class inhertis from the IStrategy class and is represents a movement strategy where the entity s..." alt="" coords="287,80,394,107"/>
+<area shape="rect" id="node3" href="$classAstarStrategy.html" title="this class inhertis from the PathStrategy class and is responsible for generating the astar path that..." alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$classBeelineStrategy.html" title="this class inherits from the IStrategy class and is responsible for generating the beeline that the d..." alt="" coords="140,155,267,181"/>
+<area shape="rect" id="node5" href="$classBfsStrategy.html" title="this class inhertis from the PathStrategy class and is responsible for generating the depth first sea..." alt="" coords="291,155,390,181"/>
+<area shape="rect" id="node6" href="$classDfsStrategy.html" title="this class inhertis from the PathStrategy class and is responsible for generating the depth first sea..." alt="" coords="414,155,513,181"/>
+<area shape="rect" id="node7" href="$classDijkstraStrategy.html" title="this class inhertis from the PathStrategy class and is responsible for generating the dijkstra path t..." alt="" coords="537,155,665,181"/>
+<area shape="rect" id="node2" href="$classIStrategy.html" title="Strategy interface." alt="" coords="300,5,381,32"/>
+</map>

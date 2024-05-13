@@ -1,0 +1,117 @@
+\hypertarget{classIEntityDecorator}{}\doxysection{IEntity\+Decorator Class Reference}
+\label{classIEntityDecorator}\index{IEntityDecorator@{IEntityDecorator}}
+
+
+Represents a decorator for an entity with another entity. Allows us to wrap an entity with functionality of another entity.  
+
+
+
+
+{\ttfamily \#include $<$IEntity\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for IEntity\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classIEntityDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IEntity\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classIEntityDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIEntityDecorator_a67b5bc11330c7c768eaf5803640da0bc}{IEntity\+Decorator}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classIEntityDecorator}{IEntity\+Decorator}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIEntityDecorator_a0f1dfa6199eefa6afc5a5ca5233b39a8}\label{classIEntityDecorator_a0f1dfa6199eefa6afc5a5ca5233b39a8}} 
+virtual \mbox{\hyperlink{classIEntityDecorator_a0f1dfa6199eefa6afc5a5ca5233b39a8}{$\sim$\+IEntity\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classIEntityDecorator}{IEntity\+Decorator}} destructor -\/ clean up dynamically allocated memory for entity\textquotesingle{}s. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIEntityDecorator_a9333e8c51240099df07751d6e8e92252}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Update the entity in the model (inherited from \mbox{\hyperlink{classIEntity}{IEntity}}) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ \mbox{\hyperlink{classIEntityDecorator_a1ac15bf72a16b7b9b2a1e00fa5565da4}{get\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Get the entity that this decorator decorates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIEntityDecorator_afe9de153af53f3f51ae4e791fbb55354}\label{classIEntityDecorator_afe9de153af53f3f51ae4e791fbb55354}} 
+\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ {\bfseries entity} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a decorator for an entity with another entity. Allows us to wrap an entity with functionality of another entity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIEntityDecorator_a67b5bc11330c7c768eaf5803640da0bc}\label{classIEntityDecorator_a67b5bc11330c7c768eaf5803640da0bc}} 
+\index{IEntityDecorator@{IEntityDecorator}!IEntityDecorator@{IEntityDecorator}}
+\index{IEntityDecorator@{IEntityDecorator}!IEntityDecorator@{IEntityDecorator}}
+\doxysubsubsection{\texorpdfstring{IEntityDecorator()}{IEntityDecorator()}}
+{\footnotesize\ttfamily IEntity\+Decorator\+::\+IEntity\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classIEntityDecorator}{IEntity\+Decorator}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to decorate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIEntityDecorator_a1ac15bf72a16b7b9b2a1e00fa5565da4}\label{classIEntityDecorator_a1ac15bf72a16b7b9b2a1e00fa5565da4}} 
+\index{IEntityDecorator@{IEntityDecorator}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!IEntityDecorator@{IEntityDecorator}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ IEntity\+Decorator\+::get\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the entity that this decorator decorates. 
+
+\begin{DoxyReturn}{Returns}
+The entity that this decorator decorates 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classBatteryDecorator_af6c2e9fb020acd65a777b98dbd954dce}{Battery\+Decorator}}.
+
+\mbox{\Hypertarget{classIEntityDecorator_a9333e8c51240099df07751d6e8e92252}\label{classIEntityDecorator_a9333e8c51240099df07751d6e8e92252}} 
+\index{IEntityDecorator@{IEntityDecorator}!update@{update}}
+\index{update@{update}!IEntityDecorator@{IEntityDecorator}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void IEntity\+Decorator\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the entity in the model (inherited from \mbox{\hyperlink{classIEntity}{IEntity}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The time step \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9aac6c7fa7d3d721f2ea69b116d39d5b}{IEntity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBatteryDecorator_ac2a808adcd426d1c375b81c7b0dcd735}{Battery\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/IEntity\+Decorator.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/IEntity\+Decorator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{classDataCollectorSingleton}{}\doxysection{Data\+Collector\+Singleton Class Reference}
+\label{classDataCollectorSingleton}\index{DataCollectorSingleton@{DataCollectorSingleton}}
+
+
+Singleton method for collecting data and storing to csv.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Collector\+Singleton.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDataCollectorSingleton_a185b784e38971a932a367d15fef6de43}{log\+Package\+Data}} (const Json\+Object \&data, double delta\+Time, double distance\+Traveled)
+\begin{DoxyCompactList}\small\item\em log data to the collector for a package \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollectorSingleton_a7f9f64207ca25e67296b22c3e01895f8}{log\+Drone\+Data}} (const Json\+Object \&data, double battery\+Level, double distance\+Traveled)
+\begin{DoxyCompactList}\small\item\em Log data to the collector for a drone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataCollectorSingleton_a1b4f1480d24b9c7d8af6d45acc1de19e}{save\+To\+CSV}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em save logged data to a csv file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDataCollectorSingleton}{Data\+Collector\+Singleton}} $\ast$ \mbox{\hyperlink{classDataCollectorSingleton_a4171f937a43f51681fabf0de74c03a0f}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get instance of \mbox{\hyperlink{classDataCollectorSingleton}{Data\+Collector\+Singleton}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton method for collecting data and storing to csv. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataCollectorSingleton_a4171f937a43f51681fabf0de74c03a0f}\label{classDataCollectorSingleton_a4171f937a43f51681fabf0de74c03a0f}} 
+\index{DataCollectorSingleton@{DataCollectorSingleton}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!DataCollectorSingleton@{DataCollectorSingleton}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataCollectorSingleton}{Data\+Collector\+Singleton}} $\ast$ Data\+Collector\+Singleton\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get instance of \mbox{\hyperlink{classDataCollectorSingleton}{Data\+Collector\+Singleton}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classDataCollectorSingleton}{Data\+Collector\+Singleton}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollectorSingleton_a7f9f64207ca25e67296b22c3e01895f8}\label{classDataCollectorSingleton_a7f9f64207ca25e67296b22c3e01895f8}} 
+\index{DataCollectorSingleton@{DataCollectorSingleton}!logDroneData@{logDroneData}}
+\index{logDroneData@{logDroneData}!DataCollectorSingleton@{DataCollectorSingleton}}
+\doxysubsubsection{\texorpdfstring{logDroneData()}{logDroneData()}}
+{\footnotesize\ttfamily void Data\+Collector\+Singleton\+::log\+Drone\+Data (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{data,  }\item[{double}]{battery\+Level,  }\item[{double}]{distance\+Traveled }\end{DoxyParamCaption})}
+
+
+
+Log data to the collector for a drone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & to log from the JSON format containing the object\textquotesingle{}s information \\
+\hline
+{\em battery\+Level} & is the battery level of the drone \\
+\hline
+{\em distance\+Traveled} & is the distance traveled by the drone \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollectorSingleton_a185b784e38971a932a367d15fef6de43}\label{classDataCollectorSingleton_a185b784e38971a932a367d15fef6de43}} 
+\index{DataCollectorSingleton@{DataCollectorSingleton}!logPackageData@{logPackageData}}
+\index{logPackageData@{logPackageData}!DataCollectorSingleton@{DataCollectorSingleton}}
+\doxysubsubsection{\texorpdfstring{logPackageData()}{logPackageData()}}
+{\footnotesize\ttfamily void Data\+Collector\+Singleton\+::log\+Package\+Data (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{data,  }\item[{double}]{delta\+Time,  }\item[{double}]{distance\+Traveled }\end{DoxyParamCaption})}
+
+
+
+log data to the collector for a package 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & to log from the JSON format containing the object\textquotesingle{}s information \\
+\hline
+{\em delta\+Time} & is the time since the last data log \\
+\hline
+{\em distance\+Traveled} & is the distance traveled by the package \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataCollectorSingleton_a1b4f1480d24b9c7d8af6d45acc1de19e}\label{classDataCollectorSingleton_a1b4f1480d24b9c7d8af6d45acc1de19e}} 
+\index{DataCollectorSingleton@{DataCollectorSingleton}!saveToCSV@{saveToCSV}}
+\index{saveToCSV@{saveToCSV}!DataCollectorSingleton@{DataCollectorSingleton}}
+\doxysubsubsection{\texorpdfstring{saveToCSV()}{saveToCSV()}}
+{\footnotesize\ttfamily void Data\+Collector\+Singleton\+::save\+To\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+save logged data to a csv file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & is the name of the csv file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Data\+Collector\+Singleton.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Data\+Collector\+Singleton.\+cc\end{DoxyCompactItemize}

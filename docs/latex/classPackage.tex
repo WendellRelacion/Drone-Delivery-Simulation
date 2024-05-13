@@ -1,0 +1,153 @@
+\hypertarget{classPackage}{}\doxysection{Package Class Reference}
+\label{classPackage}\index{Package@{Package}}
+
+
+Inheritance diagram for Package\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classPackage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Package\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classPackage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPackage_ae78246397443644676921e7945f786e4}{Package}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classPackage_aba4a0525a47ac6c98c4e5766d1ae8d82}{get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{classPackage}{Package}}\textquotesingle{}s destination. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPackage_ac6dac9638597e53dee1a5d208edc2643}{get\+Strategy\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the strategy for this package. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackage_a74ed00ee534e02f3125a67bb10d5d9c0}{set\+Strategy\+Name}} (std\+::string strategy\+Name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Strategy Name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackage_a37c445b5d543d8250a1d043c53b1935a}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{classPackage}{Package}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPackage_a7c14e68880df42e88aee6508a9ce9d21}\label{classPackage_a7c14e68880df42e88aee6508a9ce9d21}} 
+int {\bfseries get\+Tick\+Count} () const
+\item 
+\mbox{\Hypertarget{classPackage_aabc8035889ab51a6eba8c3f400ce748f}\label{classPackage_aabc8035889ab51a6eba8c3f400ce748f}} 
+double {\bfseries get\+Delta\+Time} () const
+\item 
+void \mbox{\hyperlink{classPackage_ae97714dcb5cd6954eabe1a3cd32dd1f6}{init\+Delivery}} (\mbox{\hyperlink{classRobot}{Robot}} $\ast$owner)
+\begin{DoxyCompactList}\small\item\em Sets the attributes for delivery. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPackage_a187a158cb824c804d344cbeb09a3a5e8}\label{classPackage_a187a158cb824c804d344cbeb09a3a5e8}} 
+void \mbox{\hyperlink{classPackage_a187a158cb824c804d344cbeb09a3a5e8}{hand\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Gives the robot/owner this package. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPackage_a744063e3e58829ae7325d1ec347c3c51}\label{classPackage_a744063e3e58829ae7325d1ec347c3c51}} 
+bool {\bfseries requires\+Delivery} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPackage_ae78246397443644676921e7945f786e4}\label{classPackage_ae78246397443644676921e7945f786e4}} 
+\index{Package@{Package}!Package@{Package}}
+\index{Package@{Package}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{Package()}{Package()}}
+{\footnotesize\ttfamily Package\+::\+Package (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & JSON object containing the package\textquotesingle{}s information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPackage_aba4a0525a47ac6c98c4e5766d1ae8d82}\label{classPackage_aba4a0525a47ac6c98c4e5766d1ae8d82}} 
+\index{Package@{Package}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Package\+::get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \mbox{\hyperlink{classPackage}{Package}}\textquotesingle{}s destination. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classPackage}{Package}}\textquotesingle{}s destination 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackage_ac6dac9638597e53dee1a5d208edc2643}\label{classPackage_ac6dac9638597e53dee1a5d208edc2643}} 
+\index{Package@{Package}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily std\+::string Package\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the strategy for this package. 
+
+\begin{DoxyReturn}{Returns}
+String name of strategy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackage_ae97714dcb5cd6954eabe1a3cd32dd1f6}\label{classPackage_ae97714dcb5cd6954eabe1a3cd32dd1f6}} 
+\index{Package@{Package}!initDelivery@{initDelivery}}
+\index{initDelivery@{initDelivery}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{initDelivery()}{initDelivery()}}
+{\footnotesize\ttfamily void Package\+::init\+Delivery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRobot}{Robot}} $\ast$}]{owner }\end{DoxyParamCaption})}
+
+
+
+Sets the attributes for delivery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & \mbox{\hyperlink{classRobot}{Robot}} for the package to be delivered to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackage_a74ed00ee534e02f3125a67bb10d5d9c0}\label{classPackage_a74ed00ee534e02f3125a67bb10d5d9c0}} 
+\index{Package@{Package}!setStrategyName@{setStrategyName}}
+\index{setStrategyName@{setStrategyName}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{setStrategyName()}{setStrategyName()}}
+{\footnotesize\ttfamily void Package\+::set\+Strategy\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy\+Name\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Set the Strategy Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+Name\+\_\+} & Strategy name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackage_a37c445b5d543d8250a1d043c53b1935a}\label{classPackage_a37c445b5d543d8250a1d043c53b1935a}} 
+\index{Package@{Package}!update@{update}}
+\index{update@{update}!Package@{Package}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Package\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the \mbox{\hyperlink{classPackage}{Package}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & difference in time since last update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9aac6c7fa7d3d721f2ea69b116d39d5b}{IEntity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Package.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Package.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classPackageFactory}{}\doxysection{Package\+Factory Class Reference}
+\label{classPackageFactory}\index{PackageFactory@{PackageFactory}}
+
+
+\mbox{\hyperlink{classPackage}{Package}} Factory to produce \mbox{\hyperlink{classPackage}{Package}} class.  
+
+
+
+
+{\ttfamily \#include $<$Package\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Package\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classPackageFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Package\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classPackageFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPackageFactory_ac18bdac2977abb64606975c4c897ab1b}\label{classPackageFactory_ac18bdac2977abb64606975c4c897ab1b}} 
+virtual \mbox{\hyperlink{classPackageFactory_ac18bdac2977abb64606975c4c897ab1b}{$\sim$\+Package\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classPackageFactory}{Package\+Factory}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ \mbox{\hyperlink{classPackageFactory_a66c09a789ad068a7b7be7242edf2e544}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates entity using the given JSON object, if possible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPackage}{Package}} Factory to produce \mbox{\hyperlink{classPackage}{Package}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPackageFactory_a66c09a789ad068a7b7be7242edf2e544}\label{classPackageFactory_a66c09a789ad068a7b7be7242edf2e544}} 
+\index{PackageFactory@{PackageFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!PackageFactory@{PackageFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{IEntity}} $\ast$ Package\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates entity using the given JSON object, if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & -\/ Json\+Object to be used to create the new entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity that was created if it was created successfully, or a nullpointer if creation failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{IEntity\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Package\+Factory.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Package\+Factory.\+cc\end{DoxyCompactItemize}

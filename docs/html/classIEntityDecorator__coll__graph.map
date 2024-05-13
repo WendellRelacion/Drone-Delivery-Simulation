@@ -1,0 +1,9 @@
+<map id="IEntityDecorator" name="IEntityDecorator">
+<area shape="rect" id="node1" title="Represents a decorator for an entity with another entity. Allows us to wrap an entity with functional..." alt="" coords="23,364,151,391"/>
+<area shape="rect" id="node2" href="$classIEntity.html" title="Represents an entity in a physical system." alt="" coords="55,275,119,301"/>
+<area shape="rect" id="node3" href="$classVector3.html" title=" " alt="" coords="5,171,77,197"/>
+<area shape="rect" id="node4" href="$classSimulationModel.html" title="Class SimulationModel handling the transit simulation. it can communicate with the controller." alt="" coords="102,171,234,197"/>
+<area shape="rect" id="node5" href="$classCompositeFactory.html" title="Factory method for composite class. Inherits from IEntityFactory." alt="" coords="23,81,163,108"/>
+<area shape="rect" id="node6" href="$classIEntityFactory.html" title="Composite Factory Interface." alt="" coords="37,5,149,32"/>
+<area shape="rect" id="node7" href="$classIController.html" title="class for IController used for transit service. Uses the Model View" alt="" coords="188,81,279,108"/>
+</map>

@@ -1,0 +1,116 @@
+\hypertarget{classRobot}{}\doxysection{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+Represents a robot in a physical system.  
+
+
+
+
+{\ttfamily \#include $<$Robot.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRobot_a007753e52e18f9a487d8241da97d4150}{Robot}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a416c5e919cec4343ab892d4b1827399d}{update}} (double dt)
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{classPackage}{Package}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_a7e4c5a161e4cd80130a6b0283ebf8af1}{receive}} (\mbox{\hyperlink{classPackage}{Package}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Receives the passed in package. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRobot_ae42df6b90daf038b431ab9d01c043b2f}\label{classRobot_ae42df6b90daf038b431ab9d01c043b2f}} 
+bool {\bfseries requested\+Delivery} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRobot_ad26674df35a9a09b43efc01fc599abe4}\label{classRobot_ad26674df35a9a09b43efc01fc599abe4}} 
+\mbox{\hyperlink{classPackage}{Package}} $\ast$ {\bfseries package} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a robot in a physical system. 
+
+Robots move using euler integration based on a specified velocity and direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRobot_a007753e52e18f9a487d8241da97d4150}\label{classRobot_a007753e52e18f9a487d8241da97d4150}} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & JSON object containing the robot\textquotesingle{}s information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobot_a7e4c5a161e4cd80130a6b0283ebf8af1}\label{classRobot_a7e4c5a161e4cd80130a6b0283ebf8af1}} 
+\index{Robot@{Robot}!receive@{receive}}
+\index{receive@{receive}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily void Robot\+::receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackage}{Package}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Receives the passed in package. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Package$\ast$} & \mbox{\hyperlink{classPackage}{Package}} to be received by the robot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a416c5e919cec4343ab892d4b1827399d}\label{classRobot_a416c5e919cec4343ab892d4b1827399d}} 
+\index{Robot@{Robot}!update@{update}}
+\index{update@{update}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Robot\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the \mbox{\hyperlink{classPackage}{Package}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & difference in time since last update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9aac6c7fa7d3d721f2ea69b116d39d5b}{IEntity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Robot.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Robot.\+cc\end{DoxyCompactItemize}

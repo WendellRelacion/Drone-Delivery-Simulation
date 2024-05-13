@@ -1,0 +1,76 @@
+\hypertarget{classIStrategy}{}\doxysection{IStrategy Class Reference}
+\label{classIStrategy}\index{IStrategy@{IStrategy}}
+
+
+Strategy interface.  
+
+
+
+
+{\ttfamily \#include $<$IStrategy.\+h$>$}
+
+
+
+Inheritance diagram for IStrategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIStrategy__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIStrategy_a45ec6db0aceabc2e3712d0639978a8d0}{move}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)=0
+\begin{DoxyCompactList}\small\item\em Move toward next position. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIStrategy_ae4b73edc7ce1e0d8108905eeda10ee8c}{is\+Completed}} ()=0
+\begin{DoxyCompactList}\small\item\em Check if the trip is completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Strategy interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIStrategy_ae4b73edc7ce1e0d8108905eeda10ee8c}\label{classIStrategy_ae4b73edc7ce1e0d8108905eeda10ee8c}} 
+\index{IStrategy@{IStrategy}!isCompleted@{isCompleted}}
+\index{isCompleted@{isCompleted}!IStrategy@{IStrategy}}
+\doxysubsubsection{\texorpdfstring{isCompleted()}{isCompleted()}}
+{\footnotesize\ttfamily virtual bool IStrategy\+::is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the trip is completed. 
+
+\begin{DoxyReturn}{Returns}
+True if complete, false if not complete 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPathStrategy_aed36bddbee890148b3a814699d613b9e}{Path\+Strategy}}, and \mbox{\hyperlink{classICelebrationDecorator_ab345ff40591898571d21ceb9c02c4741}{ICelebration\+Decorator}}.
+
+\mbox{\Hypertarget{classIStrategy_a45ec6db0aceabc2e3712d0639978a8d0}\label{classIStrategy_a45ec6db0aceabc2e3712d0639978a8d0}} 
+\index{IStrategy@{IStrategy}!move@{move}}
+\index{move@{move}!IStrategy@{IStrategy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void IStrategy\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Move toward next position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to move \\
+\hline
+{\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPathStrategy_a77745273258d2f8b047ea91e17fd761c}{Path\+Strategy}}, and \mbox{\hyperlink{classICelebrationDecorator_a73eeb892a13f08e20c86dd4c03be4b6e}{ICelebration\+Decorator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/IStrategy.\+h\end{DoxyCompactItemize}

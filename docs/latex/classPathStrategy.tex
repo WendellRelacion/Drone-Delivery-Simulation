@@ -1,0 +1,115 @@
+\hypertarget{classPathStrategy}{}\doxysection{Path\+Strategy Class Reference}
+\label{classPathStrategy}\index{PathStrategy@{PathStrategy}}
+
+
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a movement strategy where the entity simply moves along the given path  
+
+
+
+
+{\ttfamily \#include $<$Path\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Path\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPathStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classPathStrategy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPathStrategy_a8b73e5f41250a1b53bfeed777103fc70}{Path\+Strategy}} (std\+::vector$<$ std\+::vector$<$ float $>$$>$ path=\{\})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPathStrategy}{Path\+Strategy}} Strategy object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPathStrategy_a77745273258d2f8b047ea91e17fd761c}{move}} (\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Move toward next position in the path. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPathStrategy_aed36bddbee890148b3a814699d613b9e}{is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Check if the trip is completed by seeing if index has reached the end of the path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPathStrategy_a9939a35c1a1795aa0caeddb8eff99bda}\label{classPathStrategy_a9939a35c1a1795aa0caeddb8eff99bda}} 
+std\+::vector$<$ std\+::vector$<$ float $>$ $>$ {\bfseries path}
+\item 
+\mbox{\Hypertarget{classPathStrategy_a7eea622895fae8135424142616ddfb20}\label{classPathStrategy_a7eea622895fae8135424142616ddfb20}} 
+int {\bfseries index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class inhertis from the \mbox{\hyperlink{classIStrategy}{IStrategy}} class and is represents a movement strategy where the entity simply moves along the given path 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPathStrategy_a8b73e5f41250a1b53bfeed777103fc70}\label{classPathStrategy_a8b73e5f41250a1b53bfeed777103fc70}} 
+\index{PathStrategy@{PathStrategy}!PathStrategy@{PathStrategy}}
+\index{PathStrategy@{PathStrategy}!PathStrategy@{PathStrategy}}
+\doxysubsubsection{\texorpdfstring{PathStrategy()}{PathStrategy()}}
+{\footnotesize\ttfamily Path\+Strategy\+::\+Path\+Strategy (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ float $>$$>$}]{path = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPathStrategy}{Path\+Strategy}} Strategy object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to follow \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPathStrategy_aed36bddbee890148b3a814699d613b9e}\label{classPathStrategy_aed36bddbee890148b3a814699d613b9e}} 
+\index{PathStrategy@{PathStrategy}!isCompleted@{isCompleted}}
+\index{isCompleted@{isCompleted}!PathStrategy@{PathStrategy}}
+\doxysubsubsection{\texorpdfstring{isCompleted()}{isCompleted()}}
+{\footnotesize\ttfamily bool Path\+Strategy\+::is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the trip is completed by seeing if index has reached the end of the path. 
+
+\begin{DoxyReturn}{Returns}
+True if complete, false if not complete 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIStrategy_ae4b73edc7ce1e0d8108905eeda10ee8c}{IStrategy}}.
+
+\mbox{\Hypertarget{classPathStrategy_a77745273258d2f8b047ea91e17fd761c}\label{classPathStrategy_a77745273258d2f8b047ea91e17fd761c}} 
+\index{PathStrategy@{PathStrategy}!move@{move}}
+\index{move@{move}!PathStrategy@{PathStrategy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Path\+Strategy\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{IEntity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Move toward next position in the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to move \\
+\hline
+{\em dt} & Delta Time \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIStrategy_a45ec6db0aceabc2e3712d0639978a8d0}{IStrategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/include/Path\+Strategy.\+h\item 
+/home/grude013/\+Desktop/csci\+\_\+3081w/homework/hw4/libs/transit/src/Path\+Strategy.\+cc\end{DoxyCompactItemize}

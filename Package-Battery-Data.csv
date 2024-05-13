@@ -1,0 +1,2 @@
+direction,id,name,position,radius,rotation,scale,speed,type,deltaTime,
+[1,0,0],0,"P3-DFS-Batterycheck_package",[-1078.7454961743163,254.66499999999999,299.18905499114987],1,[0,0,0,0],[0.75,0.75,0.75],30,"package","451.97",

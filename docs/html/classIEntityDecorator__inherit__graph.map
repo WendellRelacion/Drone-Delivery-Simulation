@@ -1,0 +1,5 @@
+<map id="IEntityDecorator" name="IEntityDecorator">
+<area shape="rect" id="node1" title="Represents a decorator for an entity with another entity. Allows us to wrap an entity with functional..." alt="" coords="9,80,137,107"/>
+<area shape="rect" id="node3" href="$classBatteryDecorator.html" title="Represents a battery entity decorator. Extends battery functionality to an entity." alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node2" href="$classIEntity.html" title="Represents an entity in a physical system." alt="" coords="41,5,105,32"/>
+</map>

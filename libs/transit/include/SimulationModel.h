@@ -1,0 +1,119 @@
+#ifndef SIMULATION_MODEL_H_
+#define SIMULATION_MODEL_H_
+
+#include "CompositeFactory.h"
+#include "Drone.h"
+#include "IController.h"
+#include "IEntity.h"
+#include "Robot.h"
+#include "graph.h"
+#include <deque>
+#include <map>
+#include <set>
+#include <climits>
+
+//--------------------  Model ----------------------------
+
+/// Simulation Model handling the transit simulation.  The model can communicate
+/// with the controller.
+/**
+ * @class SimulationModel
+ * @brief Class SimulationModel handling the transit simulation. it can
+ * communicate with the controller
+ **/
+class SimulationModel {
+ public:
+  /**
+   * @brief Default constructor that create the SimulationModel object
+   **/
+  SimulationModel(IController& controller);
+
+  /**
+   * @brief Destructor
+   */
+  ~SimulationModel();
+
+  /**
+   * @brief Set the Graph for the SimulationModel
+   * @param graph Type IGraph* contain the new graph for SimulationModel
+   **/
+  void setGraph(const routing::IGraph* graph) { this->graph = graph; }
+
+  /**
+   * @brief Creates a new simulation entity
+   * @param entity Type JsonObject contain the entity's reference to decide
+   *which entity to create
+   **/
+  IEntity* createEntity(JsonObject& entity);
+
+  /**
+   * @brief Removes entity with given ID from the simulation
+   * 
+   * @param id of the entity to be removed
+  */
+  void removeEntity(int id);
+
+  /**
+   * @brief Schedule a trip for an object in the scene
+   * @param detail Type JsonObject contain the entity's reference to schedule
+   *the detail of the trip being scheduled
+   **/
+  void scheduleTrip(JsonObject& details);
+
+  /**
+   * @brief Update the simulation
+   * @param dt Type double contain the time since update was last called.
+   **/
+  void update(double dt);
+
+  /**
+   * @brief Stops the simulation
+   * @return Void
+   **/
+  void stop();
+
+  /**
+   * @brief Returns the controller for the model
+   * @return IController& controller
+   */
+  IController& getController() { return controller; }
+
+  /**
+   * @brief Returns the entities in the model
+   * @return a map of <int, IEntity*> entities in the model
+   */
+  std::map<int, IEntity*>& getEntities() { return entities; }
+
+  /**
+   * @brief Adds an entity to the list stored in the model (not actual simulation)
+   * @param entity an entity pointer to be stored in the models logic
+   */
+  void addToEntities(IEntity* entity) { entities[entity->getId()] = entity; }
+
+  /**
+   * @brief Returns the closest recharge station to the given entity
+   * @param entity an entity pointer to compare to the recharge stations
+   * @return IEntity* the closest recharge station to the given entity
+   */
+  IEntity* findClosestRechargeStation(IEntity* entity);
+
+  /**
+   * @brief Returns the graph of the map
+   * @returns IGraph* graph pointer
+  */
+  const routing::IGraph* getGraph();
+
+  std::deque<Package*> scheduledDeliveries;
+
+ protected:
+  IController& controller;
+  std::map<int, IEntity*> entities;
+  std::set<int> removed;
+  void removeFromSim(int id);
+  const routing::IGraph* graph;
+  CompositeFactory entityFactory;
+  // HW4 UPDATE: keeps track of all recharge stations in the map
+  std::vector<IEntity*> rechargeStations;
+};
+
+#endif

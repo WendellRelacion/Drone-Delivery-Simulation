@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIEntity.html" title="Represents an entity in a physical system." alt="" coords="5,183,69,209"/>
+<area shape="rect" id="node2" href="$classBattery.html" title="Represents a battery entity. Extends IEntity." alt="" coords="147,5,217,32"/>
+<area shape="rect" id="node3" href="$classDrone.html" title="Represents a drone in a physical system. Drones move using euler integration based on a specified vel..." alt="" coords="151,56,213,83"/>
+<area shape="rect" id="node4" href="$classHelicopter.html" title=" " alt="" coords="137,107,227,133"/>
+<area shape="rect" id="node5" href="$classHuman.html" title=" " alt="" coords="147,157,217,184"/>
+<area shape="rect" id="node6" href="$classIEntityDecorator.html" title="Represents a decorator for an entity with another entity. Allows us to wrap an entity with functional..." alt="" coords="118,208,246,235"/>
+<area shape="rect" id="node8" href="$classPackage.html" title=" " alt="" coords="143,259,221,285"/>
+<area shape="rect" id="node9" href="$classRechargeStation.html" title="Represents a recharge station entity. Extends IEntity." alt="" coords="117,309,247,336"/>
+<area shape="rect" id="node10" href="$classRobot.html" title="Represents a robot in a physical system." alt="" coords="152,360,212,387"/>
+<area shape="rect" id="node7" href="$classBatteryDecorator.html" title="Represents a battery entity decorator. Extends battery functionality to an entity." alt="" coords="295,208,429,235"/>
+</map>
