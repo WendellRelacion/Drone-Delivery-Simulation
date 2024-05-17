@@ -1,12 +1,10 @@
-# CSci 3081 Homework 4 | Drone Delivery Simulation
-Team Section: 010  
-Team Number: 63
+Drone Delivery Simulation
 
 ## Team Members
-* Jamison Grudem (grude013)
-* Rishabh Agarwal (agarw266)
-* Wendell Relacion (relac002)
-* Zakariya Abdi (abdi0356)
+* Jamison Grudem 
+* Rishabh Agarwal 
+* Wendell Relacion 
+* Zakariya Abdi (
 
 ## About The Project
 This initiative builds upon a simulation derived from an actual drone-based package delivery system. We have implemented several augmentations to elevate the project's functionality, steering it toward a simulation model more closely aligned with real-world scenarios. Notable enhancements include the incorporation of parameters such as the battery life of entities, an extended framework for comprehensive data collection and analytics throughout distinct phases of the simulation. This integration aligns with predictive modeling, accompanied by the establishment of a groundwork for future project extensions. Our innovative approach facilitates seamless testing and analysis of prospective modifications, requiring little to no alteration of existing code lines.
